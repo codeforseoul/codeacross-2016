@@ -354,7 +354,7 @@ ul li {
   padding: 0 15px;
 }
 .site-header .intro h2 {
-  margin-top: 160px;
+  margin-top: 200px;
   font-size: 15px;
 }
 .site-header .intro h1 {
@@ -371,7 +371,7 @@ ul li {
   text-decoration: underline;
 }
 .site-header .intro img.logo {
-  width: 60%;
+  width: 300px;
 }
 .site-header canvas {
   background-color: #232830;
@@ -391,10 +391,11 @@ ul li {
   .site-header {
     margin-top: 0px;
     background-color: #232830;
-    min-height: 91vh;
+    // min-height: 91vh;
   }
   .site-header .intro {
     color: white;
+    padding: 150px 15px;
   }
   .site-header .intro h2 {
     margin-top: 0px;
@@ -414,10 +415,6 @@ ul li {
     color: white;
     text-decoration: underline;
   }
-  .site-header .intro img.logo {
-    width: 40%;
-  }
-
   #chart-attribution {
     display: block;
     position: absolute;
