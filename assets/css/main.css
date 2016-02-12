@@ -368,7 +368,6 @@ ul li {
 }
 .site-header .intro a {
   color: black;
-  text-decoration: underline;
 }
 .site-header .intro img.logo {
   width: 300px;
@@ -413,14 +412,13 @@ ul li {
   }
   .site-header .intro a {
     color: white;
-    text-decoration: underline;
   }
   #chart-attribution {
     display: block;
     position: absolute;
     bottom: 0px;
     right: 0px;
-    color: black;
+    color: white;
   }
 
   .site-branding {
