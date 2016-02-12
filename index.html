@@ -8,8 +8,9 @@
     <title>Code Across 2016</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/epoch/0.8.4/css/epoch.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body data-spy="scroll" data-target="#site-nav">
@@ -51,17 +52,17 @@
             </div>
         </div><!-- /.container -->
     </nav>
-
     <header id="site-header" class="site-header valign-center"> 
+        <canvas id="myChart"></canvas>
+        <span id="chart-attribution">위 차트는 chartjs 홈페이지 소스코드를 참조하였습니다.</span>
         <div class="intro">
-
             <h2>2016년 3월 5일 / 장소 미정</h2>
             
             <h1>Code Across & Open Data Day 2016</h1>
 
             <p><a href="http://codenamu.org" title="코드나무">코드나무</a>, <a href="http://codeforseoul.org" title="코드포서울">코드포서울</a></p>
 
-            <img src="assets/images/logo.png" alt="Logo">
+            <img class="logo" src="assets/images/logo.png" alt="Logo">
             
             
             <!-- <a class="btn btn-white" data-scroll href="#registration">Register Now</a> -->
@@ -76,8 +77,8 @@
 
                     <h3 class="section-title">이 행사는?</h3>
 
-                    <p>You've inspired new consumer, racked up click-thru's, blown-up brand enes. We can't give you back the weekends you worked, or erase the pain ebeing forced to make the logo bigger. But if you submit your best work we ajusts might be able to give the chance to show you best digital marketing.</p>
-
+                    <p>CodeAcross는 <a href="http://codeforamerica.org" title="Code for America">Code for America</a>가, <a href="http://okfn.org" title="Open Knowledge">Open Knowledge</a>가 주도하는 시빅 해킹 행사입니다. 전 세계에서 시빅 해킹에 동참하는 단체 및 커뮤니티들이 한날 한시에 서로 각자의 도시에 맞는 주제를 가지고 시빅 해킹을 위한 1일 행사를 개최합니다.</p>
+                    
                     <figure>
                         <img alt="" class="img-responsive" src="assets/images/about-us.jpg">
                     </figure>
@@ -88,14 +89,13 @@
 
                     <h3 class="section-title multiple-title">행사 목적</h3>
 
-                    <p>You've inspired new consumer, racked up click-thru's, blown-up brand enes. We can't give you back the weekends you worked, or erase the pain ebeing forced to make the logo bigger. But if you submit your best work we ajusts might be able to give the chance to show you best digital marketing.</p>
+                    <p><a href="http://transparency.codenamu.org" title="Code Across 2015">작년</a>에 이어 두번째로 여는 Code Across 2016 행사는 Open Data Day와 맞물려 데이터에 보다 초점을 두고 있습니다. 오픈 데이터와 관련된 기술적, 법적인 이슈들을 함께 살펴보고 직접 오픈데이터를 만들고 다듬고 프로젝트를 만들어보는 전반적인 과정을 함께 체험하는 것이 2016년의 목적입니다.</p>
 
                     <ul class="list-arrow-right">
 
-                        <li>Learn from the best Asian Social Media Experts &amp; Case Studies</li>
-                        <li>Have dedicated 2-to-1 meetings with the experts</li>
-                        <li>Reach more consumers for less by learning new digital media skills</li>
-                        <li>Save money when spending in online advertising</li>
+                        <li>전 세계 활동가들과 한날 한시에 함께 하는 시빅 해킹 이벤트</li>
+                        <li>데이터 전문가에게 듣는 오픈 데이터 워크숍</li>
+                        <li>직접 참여하는 오픈데이터 프로젝트 A to Z!: 국회의원 맛집 지도 만들기</li>
                     
                     </ul>
 
@@ -237,7 +237,8 @@
                         <div class="time">
                             <time datetime="10:00">10:00 am</time> - <time datetime="12:00">12:00 pm</time>
                         </div>
-                        <h3>"순순히 데이터를 넘긴다면<br>유혈사태는 벌어지지 않을것입니다"<br>정보공개청구 방법과 사례</h3>
+                        <h3>"순순히 데이터를 넘긴다면<br>유혈사태는 벌어지지 않을것입니다"</h3>
+                        <h4>: 정보공개청구 방법과 사례</h4>
                         <p>김슬</p>
                     </div>
                 </div>
@@ -246,7 +247,8 @@
                         <div class="time">
                             <time datetime="10:00">10:00 am</time> - <time datetime="12:00">12:00 pm</time>
                         </div>
-                        <h3>"R과 RStudio<br>자료처리작업 워크프로우"<br>: data.table, tydr, dplyr</h3>
+                        <h3>"R과 RStudio<br>자료처리작업 워크프로우"</h3>
+                        <h4>: data.table, tydr, dplyr</h4>
                         <p>이광춘</p>
                     </div>
                 </div>
@@ -263,7 +265,8 @@
                         <div class="time">
                             <time datetime="13:30">13:30 pm</time> - <time datetime="18:00">18:00 pm</time>
                         </div>
-                        <h3>데이터</h3>
+                        <h3>데이터팀</h3>
+                        <p>PDF로 공개된 국회의원 정치자금 사용내역을<br>오픈 데이터로 제작 및 가공</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
@@ -271,7 +274,8 @@
                         <div class="time">
                             <time datetime="13:00">13:30 pm</time> - <time datetime="18:00">18:00 pm</time>
                         </div>
-                        <h3>서비스</h3>
+                        <h3>서비스팀</h3>
+                        <p>데이터팀에서 가공한 데이터를 활용하여<br>국회의원 맛집 지도 제작</p>
                     </div>
                 </div>
             </div>
@@ -297,7 +301,7 @@
 
                         <h4>김보람</h4>
 
-                        <p>List, Open Knowledge 활동가</p>
+                        <p><a href="http://li-st.com/" title="리스트">List</a>, <a href="http://okfn.org" title="Open Knowledge">Open Knowledge</a> 활동가</p>
 
                         <ul class="social-block">
                             <!-- <li><a href=""><i class="ion-social-twitter"></i></a></li>
@@ -340,10 +344,8 @@
                         <p><a href="http://www.xwmooc.net/" title="xwMOOC">xwMOOC</a> 대표</p>
 
                         <ul class="social-block">
-                            <!--<li><a href=""><i class="ion-social-twitter"></i></a></li>
-                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
-                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
-                            <li><a href=""><i class="ion-social-googleplus"></i></a></li> -->
+                            <li><a href="http://www.xwmooc.net" title="xwMooc"><i class="ion-home"></i></a></li>
+                            <li><a href="https://www.facebook.com/xwmooc"><i class="ion-social-facebook"></i></a></li>
                         </ul>
 
                     </div><!-- /.speaker -->
@@ -465,7 +467,7 @@
                 <div class="col-md-12">
                     <p class="site-info">위 사이트는 <a href="http://technextit.com">Technext Limited</a>에서 만든 <a href="https://themewagon.com/themes/conference-free-responsive-event-planning-html5-template/" title="테마">테마</a>를 활용하여 <a href="http://codeforseoul.org" title="Code for Seoul">코드포서울</a>에서 제작하였습니다.</p>
                     <ul class="social-block">
-                        <li><a href="https://github.com/codeforseoul"><i class="ion-social-github"></i></a></li>
+                        <li><a href="https://github.com/codeforseoul/codeacross-2016"><i class="ion-social-github"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -473,9 +475,13 @@
     </footer>
 
     <!-- script -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.0.0/js/smooth-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.14/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
